@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="姓名:" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameinput"
+        android:layout_toRightOf="@id/name"
+        android:layout_alignBaseline="@id/name"
+        android:hint="请在此处输入姓名"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20px"
+        android:text="年龄:" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ageinput"
+        android:layout_toRightOf="@id/age"
+        android:layout_alignBaseline="@id/age"
+        android:hint="请在此处输入年龄"/>
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_below="@id/age"
+        android:text="身高:" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heightinput"
+        android:layout_toRightOf="@id/height"
+        android:layout_alignBaseline="@id/height"
+        android:hint="请在此处输入身高"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:layout_below="@id/height"
+        android:text="添加数据"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:layout_toRightOf="@id/add"
+        android:layout_alignBaseline="@id/add"
+        android:text="添加数据"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:layout_toRightOf="@id/show"
+        android:layout_alignBaseline="@id/show"
+        android:text="添加数据"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:layout_toRightOf="@id/clear"
+        android:layout_alignBaseline="@id/clear"
+        android:text="添加数据"/>
+
+</RelativeLayout>
